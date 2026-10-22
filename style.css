@@ -1,0 +1,135 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0c1220, #111b2b 45%, #1c2536);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard {
+  width: min(1100px, 92vw);
+  background: rgba(17, 24, 39, 0.92);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+  overflow: hidden;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 24px;
+  background: linear-gradient(90deg, #1a2433, #162130);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.brand {
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #f2d36b;
+}
+
+.money {
+  font-size: 30px;
+  font-weight: 800;
+  color: #7af5a3;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr;
+  gap: 18px;
+  padding: 20px;
+}
+
+.panel {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.stats-title {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #dfe8f5;
+  margin-bottom: 14px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.03);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  color: #dce7f5;
+}
+
+.stat strong {
+  color: #83ff9b;
+  font-size: 15px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 16px 18px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.btn-green { background: linear-gradient(135deg, #1dbf73, #16a25e); }
+.btn-blue { background: linear-gradient(135deg, #3b7bfd, #2c5bd6); }
+.btn-gold { background: linear-gradient(135deg, #f6b73c, #d98122); }
+.btn-purple { background: linear-gradient(135deg, #8f5bff, #6d3ef0); }
+
+.status {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 110px;
+  color: #e9efff;
+  line-height: 1.5;
+  margin-top: 12px;
+}
+
+.small {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+@media (max-width: 800px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

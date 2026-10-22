@@ -1,28 +1,33 @@
-# Driving Empire Roblox Panel
+# Driving Empire Dashboard
 
-Este projeto contém um painel estilo Driving Empire para Roblox com:
+Dashboard web estilo Driving Empire com:
 - dinheiro parado
 - renda por minuto
 - compra de carros
 - upgrade da garagem
 - bônus
 
-## Estrutura
+## Como executar
 
-- `ServerScriptService.lua` — lógica do servidor
-- `ClientPanel.lua` — painel visual para o jogador
-- `driving-empire-logo.svg` — logo do painel
+1. Abra o arquivo `index.html` no navegador, ou
+2. Rode um servidor local simples:
 
-## Como usar no Roblox Studio
+```bash
+python -m http.server 8000
+```
 
-1. Abra o Roblox Studio.
-2. Crie um novo projeto.
-3. Crie um Script em `ServerScriptService`.
-4. Cole o conteúdo de `ServerScriptService.lua`.
-5. Crie um LocalScript em `StarterPlayer > StarterPlayerScripts`.
-6. Cole o conteúdo de `ClientPanel.lua`.
-7. Pressione Play.
+Depois acesse:
+
+```bash
+http://localhost:8000
+```
+
+## Arquivos
+
+- `index.html` — estrutura da interface
+- `style.css` — estilos visuais
+- `script.js` — lógica do painel
 
 ## Observação
 
-Este é um protótipo de gameplay/UI para simular um painel de empire/garage em Roblox.
+Este projeto é um painel web de simulação para um jogo estilo Driving Empire, não para Roblox.

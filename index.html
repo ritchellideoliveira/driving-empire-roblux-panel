@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driving Empire Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <div class="topbar">
+      <div class="brand">DRIVING EMPIRE</div>
+      <div id="money" class="money">$50.000</div>
+    </div>
+
+    <div class="content">
+      <div class="panel">
+        <div class="stats-title">ESTATÍSTICAS</div>
+
+        <div class="stat">
+          <span>Dinheiro</span>
+          <strong id="moneyStat">$50.000</strong>
+        </div>
+
+        <div class="stat">
+          <span>Renda / min</span>
+          <strong id="incomeStat">$1.500</strong>
+        </div>
+
+        <div class="stat">
+          <span>Garagem</span>
+          <strong id="garageStat">Nível 1</strong>
+        </div>
+
+        <div class="stat">
+          <span>Carros</span>
+          <strong id="carsStat">1</strong>
+        </div>
+
+        <div class="stat">
+          <span>Lucro total</span>
+          <strong id="profitStat">$0</strong>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="actions">
+          <button class="btn-green" id="workBtn">TRABALHAR</button>
+          <button class="btn-blue" id="buyCarBtn">COMPRAR CARRO</button>
+          <button class="btn-gold" id="upgradeBtn">UPGRADE</button>
+          <button class="btn-purple" id="bonusBtn">BÔNUS</button>
+        </div>
+
+        <div class="status" id="statusText">
+          Status: sistema funcionando.<br>
+          Seu negócio está gerando dinheiro parado.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
